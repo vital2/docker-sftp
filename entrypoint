@@ -16,6 +16,9 @@ reArgs="^($reUser)(:$rePass)(:e)?(:$reUid)?(:$reGid)?(:$reDir)?$"
 reArgsMaybe="^[^:[:space:]]+:.*$" # Smallest indication of attempt to use argument
 reArgSkip='^([[:blank:]]*#.*|[[:blank:]]*)$' # comment or empty line
 
+# Add Group sftpusers
+groupadd sftpusers
+
 function log() {
     echo "[entrypoint] $@"
 }
